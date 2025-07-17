@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+
+  </head>
+  <body>
+
+    <div class="topnav">
+      <div class="logo-container">
+        <img src="../LogoINDEX.png" alt="Logo" class="navbar-logo">
+      </div>
+      <div class="right">
+        <a href="../index3.html">00 : Home</a>
+        </div>
+    </div>
+    <div class="spacer_blank_1"></div>
+    <h1 style="padding: 0 0 0 40px">Project P.05</h1>
+    <h2 style="padding: 0 0 0 40px; color: #ff0000"><em>PDF Grid-space Note-taking Compiler</em></h2>
+    <br>
+    <div class="container text-center">
+    <div class="row">
+        <br><br>
+        <div class="col">
+        <div class="image-container" style="padding: 25px 0 0 0;">
+          
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="image-container" style="padding: 25px 0 0 0;">
+            <img src="P5.1.jpg" alt="Project Image">
+        </div>
+        </div>
+        <div class="col">
+        <div class="image-container" style="padding: 25px 0 0 0;">
+            
+        </div>
+        </div>
+    </div>
+    </div>
+
+      <div class="spacer_blank_1"></div>
+      <div class="dividerIndex1"></div>
+      <br>
+      <script src="../EngP/scrollJS2Copy.js"></script>
+
+      <div class="container text-left">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>● Objectives</h3>
+            <p>
+                The purpose of this project was to develop my technical skills in PDF processing and automation by creating a Python 
+                script that merges multiple pages of a PDF into a single vertically stacked page while maintaining a consistent A4 aspect 
+                ratio. This was achieved by extracting page images, combining them dynamically, and adding a calculated blank grid space 
+                on the right side for annotations. The project also incorporated optional functionality to append extra blank grid pages 
+                at the end of the output document. This was done using libraries such as PyMuPDF, ReportLab, and PIL to handle page rendering, 
+                layout, and image processing.
+            </p>  
+            <a href="../index3.html" class="button large">Go back!</a>
+          </div>
+          <div class="col">
+            <h3>● Technical Details</h3>
+            <p>
+                <ul>
+                    <li>Merge multiple pages vertically into one combined PDF page by iterating through the source PDF and stacking page pixmaps.</li>
+                    <li>Dynamically calculate and append blank grid space to match a target aspect ratio (A4) and draw a light grey grid using ReportLab.</li>
+                    <li>Export and re-embed remasterised page images with correct offsets using PIL and temporary PNG files for each page section.</li>
+                    <li>Optionally add extra blank grid pages at the end of the output PDF, maintaining consistent page size and grid alignment.</li>
+                  </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
